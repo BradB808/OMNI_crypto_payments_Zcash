@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=340">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="header">
+      <img src="../icons/icon48.png" alt="OMNI" class="logo">
+      <div>
+        <h1>OMNI ZEC Converter</h1>
+        <p class="subtitle">Fiat to Zcash Price Converter</p>
+      </div>
+    </div>
+
+    <div class="rate-card">
+      <div class="rate-label">Current ZEC Price</div>
+      <div class="rate-value" id="rateValue">Loading...</div>
+      <div class="rate-meta" id="rateMeta"></div>
+    </div>
+
+    <div class="controls">
+      <div class="control-row">
+        <label for="enableToggle">Enable conversion</label>
+        <label class="switch">
+          <input type="checkbox" id="enableToggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="control-row">
+        <label for="currencySelect">Fiat currency</label>
+        <select id="currencySelect"></select>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="refreshBtn" class="btn btn-secondary">Refresh Rate</button>
+      <button id="optionsBtn" class="btn btn-primary">Settings</button>
+    </div>
+
+    <div class="footer">
+      Powered by CoinGecko
+    </div>
+  </div>
+
+  <script src="../shared/constants.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

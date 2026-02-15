@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OMNI Fiat to Zcash Price Converter — Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="../icons/icon48.png" alt="OMNI" class="logo">
+      <div>
+        <h1>OMNI ZEC Converter</h1>
+        <p>Settings &amp; Preferences</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>General</h2>
+
+      <div class="field">
+        <label for="enableToggle">Enable price conversion</label>
+        <label class="switch">
+          <input type="checkbox" id="enableToggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="currencySelect">Default fiat currency</label>
+        <select id="currencySelect"></select>
+      </div>
+
+      <div class="field">
+        <label for="decimalPlaces">ZEC decimal places</label>
+        <select id="decimalPlaces">
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="refreshInterval">Rate refresh interval</label>
+        <select id="refreshInterval">
+          <option value="30">30 seconds</option>
+          <option value="60">1 minute</option>
+          <option value="120">2 minutes</option>
+          <option value="300">5 minutes</option>
+          <option value="600">10 minutes</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Live Exchange Rates</h2>
+      <p class="card-desc">Current Zcash (ZEC) price in all supported currencies.</p>
+      <table id="ratesTable">
+        <thead>
+          <tr>
+            <th>Currency</th>
+            <th>1 ZEC =</th>
+          </tr>
+        </thead>
+        <tbody id="ratesBody">
+          <tr><td colspan="2" class="loading">Loading rates...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="actions">
+      <button id="resetBtn" class="btn btn-danger">Reset to Defaults</button>
+      <span id="statusMsg" class="status-msg"></span>
+    </div>
+
+    <div class="footer">
+      OMNI Crypto Payments v1.0.0 &mdash; Powered by CoinGecko
+    </div>
+  </div>
+
+  <script src="../shared/constants.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

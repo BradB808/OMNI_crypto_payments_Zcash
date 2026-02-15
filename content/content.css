@@ -1,0 +1,25 @@
+.omni-zec-badge {
+  display: inline-block;
+  font-size: 0.8em;
+  color: #f4b728;
+  background-color: #1a1a2e;
+  border: 1px solid #f4b728;
+  border-radius: 4px;
+  padding: 1px 5px;
+  margin-left: 4px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+  vertical-align: baseline;
+  line-height: inherit;
+  cursor: default;
+  user-select: none;
+  opacity: 0.95;
+  transition: opacity 0.2s ease;
+  letter-spacing: 0.01em;
+}
+
+.omni-zec-badge:hover {
+  opacity: 1;
+  background-color: #2a2a4e;
+}

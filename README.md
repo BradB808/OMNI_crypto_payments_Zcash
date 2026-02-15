@@ -18,7 +18,8 @@ This extension is built with privacy as a core principle:
 - **No Analytics**: We do not use Google Analytics, Mixpanel, or any other third-party tracking software.
 - **Ephemeral Data**: The only external request made is to a public API (like CoinGecko) to fetch the current Zcash exchange rate. This request contains no user-identifiable data.
 
-Your shopping habits remain 100% private.
+**Privacy Policy** 
+Your shopping habits remain 100% private. No data is collected.
 
 ## Installation
 
